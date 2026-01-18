@@ -1,225 +1,144 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Muhammad Bilawal Khan Ghouri — Portfolio</title>
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-
-  <style>
-    :root {
-      --primary: #0d6efd;
-      --light: #f8f9fa;
-      --dark: #212529;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: var(--light);
-      color: var(--dark);
-      line-height: 1.7;
-    }
-
-    .navbar {
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    }
-
-    .hero {
-      padding: 5rem 1rem;
-      background: linear-gradient(135deg, #0d6efd20, #0d6efd05);
-      border-radius: 1rem;
-    }
-
-    .profile-img {
-      width: 160px;
-      height: 160px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid var(--primary);
-    }
-
-    .section-title {
-      font-weight: 700;
-      border-left: 5px solid var(--primary);
-      padding-left: 10px;
-      margin-bottom: 1.5rem;
-    }
-
-    .skill-badge {
-      display: inline-block;
-      background-color: white;
-      border: 1px solid #dee2e6;
-      border-radius: 0.5rem;
-      padding: 0.4rem 0.8rem;
-      margin: 0.2rem;
-      transition: all 0.2s;
-    }
-
-    .skill-badge:hover {
-      background-color: var(--primary);
-      color: white;
-      transform: scale(1.05);
-    }
-
-    footer {
-      background: white;
-      padding: 1.5rem 0;
-      text-align: center;
-      border-top: 1px solid #eee;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Muhammad Bilawal Khan Ghouri | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 </head>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("0_-UPvjg3ZUNOAlfm");
+  })();
+</script>
 <body>
 
-<nav class="navbar navbar-expand-lg bg-white sticky-top">
-  <div class="container">
-    <a class="navbar-brand fw-bold text-primary" href="#">MBK Ghouri</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
+<!-- NAVBAR -->
+<nav>
+    <div class="logo">Bilawal Ghouri</div>
+    <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
     </div>
-  </div>
 </nav>
 
-<section class="hero text-center container my-5">
-  <img src="bilawal.jpg" alt="Profile" class="profile-img mb-3">
-  <h1 class="fw-bold">Muhammad Bilawal Khan Ghouri</h1>
-  <p class="lead text-muted">21 Years Old | BSCS Student | Passionate Developer</p>
-  <p class="mx-auto" style="max-width:600px;">I am a dedicated BSCS student with a strong passion for software development and problem-solving. Skilled in C++ and Java, I love building simple yet effective solutions that improve efficiency and user experience. I continuously work to enhance my programming fundamentals, logical thinking, and creativity through hands-on projects and continuous learning.</p>
-  <div class="mt-3">
-    <a href="#contact" class="btn btn-primary me-2">Contact Me</a>
-    <a href="#projects" class="btn btn-outline-primary">View Projects</a>
-  </div>
-</section>
-
-<section id="about" class="container my-5">
-  <h2 class="section-title">About Me</h2>
-  <p>I am pursuing a Bachelor's degree in Computer Science with a keen interest in software engineering, algorithms, and object-oriented programming. My main focus is mastering programming languages like C++ and Java to build reliable and efficient applications. I enjoy learning new technologies, exploring how systems work, and turning ideas into functional projects.</p>
-  <ul>
-    <li><strong>Full Name:</strong> Muhammad Bilawal Khan Ghouri</li>
-    <li><strong>Age:</strong> 21</li>
-    <li><strong>Degree:</strong> Bachelor of Science in Computer Science</li>
-    <li><strong>Location:</strong> Pakistan</li>
-  </ul>
-</section>
-
-<section id="skills" class="container my-5">
-  <h2 class="section-title">Technical Skills</h2>
-  <div class="d-flex flex-wrap">
-    <span class="skill-badge">C++</span>
-    <span class="skill-badge">Java</span>
-    <span class="skill-badge">HTML</span>
-    <span class="skill-badge">CSS</span>
-    <span class="skill-badge">JavaScript</span>
-    <span class="skill-badge">MS Office</span>
-    <span class="skill-badge">Photoshop</span>
-    <span class="skill-badge">Data Entry</span>
-    <span class="skill-badge">Typing Skills</span>
-  </div>
-</section>
-
-<section id="projects" class="container my-5">
-  <h2 class="section-title">Projects</h2>
-  <div class="row g-4">
-    <div class="col-md-4">
-      <div class="card h-100 shadow-sm border-0">
-        <div class="card-body">
-          <h5 class="card-title">Calculator in C++</h5>
-          <p class="card-text text-muted">A simple calculator built using C++ that performs basic arithmetic operations with clean input validation.</p>
+<!-- HERO SECTION -->
+<section id="home" class="hero-section">
+    <div class="hero-container">
+        <div class="hero-text animate-left">
+            <h1>Full Stack Developer</h1>
+            <h4>Laravel Expert • Flutter Developer</h4>
+            <p>I create modern, scalable web & mobile applications and professional designs with 2 years of experience in software and graphic design.</p>
+            <a href="#contact" class="btn">Hire Me</a>
         </div>
+        <div class="hero-img animate-right">
+            <img src="assets/profile.jpg" alt="Profile Image">
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="section section-light">
+    <div class="section-container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-container">
+            <div class="about-text">
+                <p>
+                   I am Muhammad Bilawal Khan Ghouri, a dedicated Full Stack Developer and Graphic Designer with over 2 years of hands-on experience in the field of computer composing and digital solutions. I specialize in Laravel-based web development, creating robust backend systems, as well as Flutter mobile app development, delivering cross-platform applications with smooth performance. Alongside development, I have strong expertise in graphic designing, producing creative social media posts and branding material. My experience includes building projects such as student enrollment systems, library management systems, and full-fledged business websites like Ghouri Photostate & Computer Composing, powered with AI-enhanced backend features. I am currently pursuing a BS in Computer Science at COMSATS University Islamabad, Vehari Campus, and I combine technical expertise with creativity to deliver professional, user-friendly, and scalable digital solutions.
+                </p>
+                <p>My expertise includes building web systems with Laravel, mobile apps with Flutter, and AI-powered solutions. I also deliver creative graphics and branding.</p>
+            </div>
+            <div class="about-img">
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS SECTION -->
+<section id="skills" class="section section-dark">
+    <div class="section-container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">Laravel (Expert)</div>
+            <div class="skill-card">Flutter Development</div>
+            <div class="skill-card">Web Development<br>(HTML • CSS • JavaScript)</div>
+            <div class="skill-card">PHP & MySQL</div>
+            <div class="skill-card">Graphic Designing</div>
+            <div class="skill-card">AI Powered Systems</div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="section section-light">
+    <div class="section-container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">Student Enrollment System</div>
+            <div class="project-card">Library Management System</div>
+            <div class="project-card">Ghouri Photostate Website (Laravel + AI)</div>
+            <div class="project-card">Social Media Graphic Designs</div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="section section-dark">
+  <div class="section-container">
+    <h2 class="section-title">Contact Me</h2>
+
+    <form id="contact-form" class="contact-form" action="https://formspree.io/f/mojjqpzw" method="post">
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Your Name" required>
       </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card h-100 shadow-sm border-0">
-        <div class="card-body">
-          <h5 class="card-title">Student Record System in Java</h5>
-          <p class="card-text text-muted">A Java-based console application for managing student data efficiently using object-oriented programming.</p>
-        </div>
+
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Your Email" required>
       </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card h-100 shadow-sm border-0">
-        <div class="card-body">
-          <h5 class="card-title">Personal Portfolio Website</h5>
-          <p class="card-text text-muted">This responsive portfolio site built with Bootstrap and JavaScript demonstrates modern web design and interactivity.</p>
-        </div>
+
+      <div class="form-group">
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
       </div>
-    </div>
+      <input type="hidden" name="portfolio" value="new portfolio contact">
+      <input type="hidden" name="portfolio" value="thankyou.html">
+      <input type="text" name="_gotcha" value="display:none">
+
+      <button type="submit" class="btn-submit">Send Message</button>
+      
+    </form>
+
+    <p class="contact-email" style="color: azure;">📧 bilawalxtylishking@gmail.com</p>
   </div>
 </section>
 
-<section id="contact" class="container my-5">
-  <h2 class="section-title">Contact Me</h2>
-  <div class="row">
-    <div class="col-md-6">
-      <p>If you want to collaborate, discuss a project, or just say hello — feel free to reach out. I am always open to opportunities that help me learn and grow as a developer.</p>
-      <ul class="list-unstyled">
-        <li><i class="bi bi-envelope-fill text-primary"></i> <strong>Email:</strong> bilawalxtylishking@gmail.com</li>
-        <li><i class="bi bi-telephone-fill text-primary"></i> <strong>Phone:</strong> 0328-6651645</li>
-        <li><i class="bi bi-geo-alt-fill text-primary"></i> <strong>Location:</strong> Pakistan</li>
-      </ul>
-    </div>
-    <div class="col-md-6">
-      <form id="contactForm" class="needs-validation" novalidate>
-        <div class="mb-3">
-          <label for="name" class="form-label">Name</label>
-          <input type="text" class="form-control" id="name" required>
-          <div class="invalid-feedback">Please enter your name.</div>
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" required>
-          <div class="invalid-feedback">Please enter a valid email.</div>
-        </div>
-        <div class="mb-3">
-          <label for="message" class="form-label">Message</label>
-          <textarea class="form-control" id="message" rows="4" required></textarea>
-          <div class="invalid-feedback">Please enter your message.</div>
-        </div>
-        <button class="btn btn-primary" type="submit">Send Message</button>
-      </form>
-      <div id="formAlert" class="alert d-none mt-3"></div>
-    </div>
-  </div>
-</section>
-
+<!-- FOOTER -->
 <footer>
-  <div class="container">
-    <small>© <span id="year"></span> Muhammad Bilawal Khan Ghouri | All Rights Reserved</small>
-  </div>
+    © 2026 Muhammad Bilawal Khan Ghouri
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
+<script src="script.js"></script>
 
-  const form = document.getElementById('contactForm');
-  const alertBox = document.getElementById('formAlert');
+//<script>
+//document.getElementById("contact-form").addEventListener("submit", function(e) {
+   // e.preventDefault();
 
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    if (!form.checkValidity()) {
-      e.stopPropagation();
-      form.classList.add('was-validated');
-      return;
-    }
-    alertBox.className = 'alert alert-success';
-    alertBox.textContent = 'Thank you for contacting me! Your message has been received.';
-    alertBox.classList.remove('d-none');
-    form.reset();
-    form.classList.remove('was-validated');
-  });
+   // emailjs.sendForm(
+     //   "service_87ugms5",
+      //  "template_ows771e",
+      //  this
+  //  ).then(function() {
+   //     alert("Message Sent Successfully");
+   //     document.getElementById("contact-form").reset();
+ //   }, function(error) {
+    //    alert("Failed to send message");
+    //    console.log(error);
+   // });
+//});
 </script>
 </body>
 </html>
